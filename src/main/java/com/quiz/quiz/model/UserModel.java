@@ -1,6 +1,6 @@
 package com.quiz.quiz.model;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Table(name = "users")
 @Entity
