@@ -2,15 +2,20 @@ package com.quiz.quiz.model;
 
 import jakarta.persistence.*;
 
-@Table(name = "users")
 @Entity
+@Table(name = "users")
 public class UserModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(unique = true, nullable = false)
     private String login;
+
+    @Column(nullable = false)
     private String password;
 
+    // Getters and Setters
     public Long getId() {
         return id;
     }

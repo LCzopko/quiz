@@ -4,11 +4,13 @@ public class QuizModel {
     private String question;
     private String[] answers;
     private int correctAnswer;
+    private String difficulty;
 
-    public QuizModel(String question, String[] answers, int correctAnswer) {
+    public QuizModel(String question, String[] answers, int correctAnswer, String difficulty) {
         this.question = question;
         this.answers = answers;
         this.correctAnswer = correctAnswer;
+        this.difficulty = difficulty;
     }
 
     // Getters and Setters
@@ -34,5 +36,12 @@ public class QuizModel {
 
     public void setCorrectAnswer(int correctAnswer) {
         this.correctAnswer = correctAnswer;
+    }
+    public String getDifficulty() {
+        return difficulty;
+    }
+
+    public void setDifficulty(String difficulty) {
+        this.difficulty = difficulty;
     }
 }
